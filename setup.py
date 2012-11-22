@@ -5,7 +5,7 @@ import os.path
 def read(*path_elements):
     return "\n\n" + file(os.path.join(*path_elements)).read()
 
-
+widget_path = 'widgetnojsdeps'
 setup(name='z3c.widgetnojsdeps',
       version='0.3.1dev',
       author = "Zope Community",
@@ -15,20 +15,20 @@ setup(name='z3c.widgetnojsdeps',
       keywords = "zope zope3 form formlib",
       url='https://github.com/avolkov/z3c.widgetnojsdeps',
       long_description=(
-          'This is a fork of z3c.widget (http://svn.zope.org/z3c.widget)\
+          'This is a fork of z3c.widgetnojsdeps (http://svn.zope.org/z3c.widgetnojsdeps)\
 with the following packages that depend on z3c.javascript removed: \
 autocomplete, flashupload, tiny'+
           '.. contents::\n\n' +
           read('CHANGES.txt') +
-          read('src', 'z3c', 'widget', 'country', 'README.txt') +
-          read('src', 'z3c', 'widget', 'dateselect', 'README.txt') +
-          read('src', 'z3c', 'widget', 'dropdowndatewidget', 'README.txt') +
-          read('src', 'z3c', 'widget', 'image', 'README.txt') +
-          read('src', 'z3c', 'widget', 'namespace', 'README.txt') +
-          read('src', 'z3c', 'widget', 'optdropdown', 'README.txt') +
-          read('src', 'z3c', 'widget', 'sequence', 'README.txt') +
-          read('src', 'z3c', 'widget', 'ssn', 'README.txt') +
-          read('src', 'z3c', 'widget', 'usphone', 'README.txt')
+          read('src', 'z3c', widget_path, 'country', 'README.txt') +
+          read('src', 'z3c', widget_path, 'dateselect', 'README.txt') +
+          read('src', 'z3c', widget_path, 'dropdowndatewidget', 'README.txt') +
+          read('src', 'z3c', widget_path, 'image', 'README.txt') +
+          read('src', 'z3c', widget_path, 'namespace', 'README.txt') +
+          read('src', 'z3c', widget_path, 'optdropdown', 'README.txt') +
+          read('src', 'z3c', widget_path, 'sequence', 'README.txt') +
+          read('src', 'z3c', widget_path, 'ssn', 'README.txt') +
+          read('src', 'z3c', widget_path, 'usphone', 'README.txt')
           ),
       zip_safe=False,
       packages=find_packages('src'),
