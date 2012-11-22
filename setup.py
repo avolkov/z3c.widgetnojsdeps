@@ -6,29 +6,28 @@ def read(*path_elements):
     return "\n\n" + file(os.path.join(*path_elements)).read()
 
 
-setup(name='z3c.widget',
+setup(name='z3c.widgetnojsdeps',
       version='0.3.1dev',
       author = "Zope Community",
-      author_email = "zope-dev@zope.org",
+      author_email = "avolkov@gmail.com",
       description = "Additional zope.formlib Widgets",
       license = "ZPL 2.1",
       keywords = "zope zope3 form formlib",
-      url='http://svn.zope.org/z3c.widget',
+      url='https://github.com/avolkov/z3c.widgetnojsdeps',
       long_description=(
+          'This is a fork of z3c.widget (http://svn.zope.org/z3c.widget)\
+with the following packages that depend on z3c.javascript removed: \
+autocomplete, flashupload, tiny'+
           '.. contents::\n\n' +
           read('CHANGES.txt') +
-          read('src', 'z3c', 'widget', 'autocomplete', 'README.txt') +
-          read('src', 'z3c', 'widget', 'autocomplete', 'demo', 'README.txt') +
           read('src', 'z3c', 'widget', 'country', 'README.txt') +
           read('src', 'z3c', 'widget', 'dateselect', 'README.txt') +
           read('src', 'z3c', 'widget', 'dropdowndatewidget', 'README.txt') +
-          read('src', 'z3c', 'widget', 'flashupload', 'README.txt') +
           read('src', 'z3c', 'widget', 'image', 'README.txt') +
           read('src', 'z3c', 'widget', 'namespace', 'README.txt') +
           read('src', 'z3c', 'widget', 'optdropdown', 'README.txt') +
           read('src', 'z3c', 'widget', 'sequence', 'README.txt') +
           read('src', 'z3c', 'widget', 'ssn', 'README.txt') +
-          read('src', 'z3c', 'widget', 'tiny', 'README.txt') +
           read('src', 'z3c', 'widget', 'usphone', 'README.txt')
           ),
       zip_safe=False,
@@ -45,7 +44,6 @@ setup(name='z3c.widget',
       install_requires = ['setuptools',
                           'ZODB3',
                           'z3c.i18n',
-                          'z3c.javascript',
                           'z3c.schema',
                           'zc.resourcelibrary',
                           'zope.app.cache',
