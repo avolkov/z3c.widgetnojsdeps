@@ -1,0 +1,2 @@
+include *.txt *.zcml *.cfg
+recursive-include *.txt *.py *.zcml *.cfg

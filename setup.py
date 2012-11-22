@@ -15,9 +15,6 @@ setup(name='z3c.widgetnojsdeps',
       keywords = "zope zope3 form formlib",
       url='https://github.com/avolkov/z3c.widgetnojsdeps',
       long_description=(
-          'This is a fork of z3c.widgetnojsdeps (http://svn.zope.org/z3c.widgetnojsdeps)\
-with the following packages that depend on z3c.javascript removed: \
-autocomplete, flashupload, tiny'+
           '.. contents::\n\n' +
           read('CHANGES.txt') +
           read('src', 'z3c', widget_path, 'country', 'README.txt') +
