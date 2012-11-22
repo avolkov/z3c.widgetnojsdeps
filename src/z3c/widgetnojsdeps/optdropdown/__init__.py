@@ -16,4 +16,4 @@
 $Id$
 """
 __docformat__ = "reStructuredText"
-from z3c.widget.optdropdown.widget import OptionalDropdownWidget
+from z3c.widgetnojsdeps.optdropdown.widget import OptionalDropdownWidget

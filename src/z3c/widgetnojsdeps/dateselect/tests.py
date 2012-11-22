@@ -12,7 +12,7 @@
 #
 ##############################################################################
 
-from z3c.widget.dateselect import testing
+from z3c.widgetnojsdeps.dateselect import testing
 import doctest
 import unittest
 import zope.schema

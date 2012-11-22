@@ -11,7 +11,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-from z3c.widget.ssn import testing
+from z3c.widgetnojsdeps.ssn import testing
 import doctest
 
 

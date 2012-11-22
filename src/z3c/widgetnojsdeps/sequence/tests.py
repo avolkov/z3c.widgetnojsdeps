@@ -24,7 +24,7 @@ from zope.interface import Interface, implements
 
 from zope.app.testing import ztapi, setup
 from zope.app.form.browser import TextWidget, ObjectWidget, DisplayWidget
-from z3c.widget.sequence.widget import (SequenceDisplayTableWidget,
+from z3c.widgetnojsdeps.sequence.widget import (SequenceDisplayTableWidget,
                                         TupleSequenceTableWidget,
                                         ListSequenceTableWidget,
                                         TupleSequenceTableJSWidget,

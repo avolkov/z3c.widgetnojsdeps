@@ -4,7 +4,7 @@ from zope.i18n import translate
 from zope.lifecycleevent import ObjectCreatedEvent
 from zope.security.interfaces import ForbiddenAttribute
 
-from z3c.widget.image.i18n import _
+from z3c.widgetnojsdeps.image.i18n import _
 
 import zope.event
 

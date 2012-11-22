@@ -20,6 +20,7 @@ import zope.component
 import zope.schema.interfaces
 from zope.app import form
 from zope.app.form import browser
+from zope.formlib.interfaces import IBrowserWidget
 from zope.app.form.browser.itemswidgets import ItemDisplayWidget
 from zope.app.form.interfaces import MissingInputError
 
@@ -39,7 +40,7 @@ class OptionalDisplayWidget(ItemDisplayWidget):
 
 class OptionalDropdownWidget(object):
     """Optional Dropdown Widget"""
-    zope.interface.implements(browser.interfaces.IBrowserWidget,
+    zope.interface.implements(IBrowserWidget,
                               form.interfaces.IInputWidget)
 
     connector = u'<br />\n'

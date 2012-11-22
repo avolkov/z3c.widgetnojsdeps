@@ -24,7 +24,7 @@ from zope.app.form.browser.interfaces import IWidgetInputErrorView
 from zope.app.form.browser.exception import WidgetInputErrorView
 from zope.app.testing import setup, ztapi
 
-from z3c.widget.dateselect.browser import DropdownWidget
+from z3c.widgetnojsdeps.dateselect.browser import DropdownWidget
 
 def setUp(test):
     setup.placefulSetUp()

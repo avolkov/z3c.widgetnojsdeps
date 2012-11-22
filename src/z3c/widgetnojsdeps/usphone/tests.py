@@ -11,7 +11,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-from z3c.widget.usphone import testing
+from z3c.widgetnojsdeps.usphone import testing
 import doctest
 
 
