@@ -15,11 +15,15 @@
 
 from pprint import pprint
 from zope.app.testing import placelesssetup
+from z3c.widgetnojsdeps.optdropdown.test_optdropdown import TestFieldIntegration
 import doctest
-import unittest
+import unittest2 as unittest
 
-
+def run_unittests():
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestFieldIntegration)
+    unittest.TextTestRunner(verbosity=2).run(suite)
 def test_suite():
+    run_unittests()
     return doctest.DocFileSuite(
         'README.txt',
         setUp=placelesssetup.setUp, tearDown=placelesssetup.tearDown,
