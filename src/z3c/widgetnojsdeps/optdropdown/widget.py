@@ -17,7 +17,9 @@ $Id$
 """
 __docformat__ = "reStructuredText"
 import zope.component
-import zope.schema.interfaces
+import zope.schema
+from z3c.form.widget import FieldWidget
+from z3c.form import interfaces
 from zope.app import form
 from zope.app.form import browser
 from zope.formlib.interfaces import IBrowserWidget
@@ -162,3 +164,9 @@ class OptionalDropdownWidget(object):
     def __call__(self):
         """See zope.app.form.browser.interfaces.IBrowserWidget"""
         return self.connector.join((self.dropdownWidget(), self.customWidget()))
+
+@zope.component.adapter(zope.schema.interfaces.IField, interfaces.IFormLayer)
+@zope.interface.implementer(interfaces.IFieldWidget)
+def OptionalDropdownWidgetFactory(field, request):
+    """Factory for OptionalDropdownWidget"""
+    return FieldWidget(field, OptionalDropdownWidget(request))
