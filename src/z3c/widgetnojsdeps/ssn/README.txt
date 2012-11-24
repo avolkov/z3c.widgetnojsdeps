@@ -21,7 +21,7 @@ First we have to create a field and a request:
 
 Now we can initialize widget.
 
-  >>> from z3c.widget.ssn.browser import SSNWidget
+  >>> from z3c.widgetnojsdeps.ssn.browser import SSNWidget
   >>> widget = SSNWidget(field, request)
 
 Let's make sure that all fields have the correct value:

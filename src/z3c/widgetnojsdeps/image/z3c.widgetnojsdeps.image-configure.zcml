@@ -1,1 +1,1 @@
-<include package="z3c.widget.image" />
+<include package="z3c.widgetnojsdeps.image" />

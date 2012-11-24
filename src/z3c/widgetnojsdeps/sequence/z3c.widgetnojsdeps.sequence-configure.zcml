@@ -1,1 +1,1 @@
-<include package="z3c.widget.sequence"/>
+<include package="z3c.widgetnojsdeps.sequence"/>

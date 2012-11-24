@@ -21,7 +21,7 @@ First we have to create a field and a request:
 
 Now we can initialize widget.
 
-  >>> from z3c.widget.usphone.browser import PhoneWidget
+  >>> from z3c.widgetnojsdeps.usphone.browser import PhoneWidget
   >>> widget = PhoneWidget(field, request)
 
 Let's make sure that all fields have the correct value:

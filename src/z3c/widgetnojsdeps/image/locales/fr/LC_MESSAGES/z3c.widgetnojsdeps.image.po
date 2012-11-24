@@ -10,7 +10,7 @@
 # Christophe Combelles <ccomb@free.fr>, 2008 
 msgid ""
 msgstr ""
-"Project-Id-Version: z3c.widget.image 74099\n"
+"Project-Id-Version: z3c.widgetnojsdeps.image 74099\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Wed Apr 11 16:38:06 2007\n"
 "PO-Revision-Date: 2008-02-24 11:55+0100\n"

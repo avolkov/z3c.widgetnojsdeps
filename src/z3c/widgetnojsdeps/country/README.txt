@@ -14,14 +14,14 @@ Before we can start, we have to do a little bit of setup:
   >>> import zope.component
   >>> import zope.schema
   >>> import zope.app.form.browser
-  >>> from z3c.widget.country.widget import CountryInputDropdown
-  >>> from z3c.widget.country import ICountry
+  >>> from z3c.widgetnojsdeps.country.widget import CountryInputDropdown
+  >>> from z3c.widgetnojsdeps.country import ICountry
   >>> from z3c.i18n.iso import territoryVocabularyFactory
   >>> from zope.publisher.interfaces.browser import IBrowserRequest
 
 First we have to create a field and a request:
 
-  >>> from z3c.widget.country import Country
+  >>> from z3c.widgetnojsdeps.country import Country
 
   >>> countryFld = Country(
   ...     __name__='country',

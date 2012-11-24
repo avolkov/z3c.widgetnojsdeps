@@ -39,7 +39,7 @@ Now we can initialize widget.
   >>> content = Content()
   >>> boundOptChoice = optchoice.bind(content)
 
-  >>> from z3c.widget.optdropdown import OptionalDropdownWidget
+  >>> from z3c.widgetnojsdeps.optdropdown import OptionalDropdownWidget
   >>> widget = OptionalDropdownWidget(boundOptChoice, request)
 
 Let's make sure that all fields have the correct value:

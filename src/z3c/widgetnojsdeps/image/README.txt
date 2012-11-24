@@ -15,7 +15,7 @@ Adding an Image
   >>> from zope import interface
   >>> from zope.schema.fieldproperty import FieldProperty
   >>> from zope.app.file.interfaces import IImage
-  >>> from z3c.widget.image.widget import ImageWidget
+  >>> from z3c.widgetnojsdeps.image.widget import ImageWidget
   >>> from zope.app.file.image import Image
 
 

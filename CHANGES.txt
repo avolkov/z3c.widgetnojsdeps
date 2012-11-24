@@ -85,6 +85,6 @@ Changes for z3c.widget
 2007/06/14 0.1.0:
 =================
 
- - z3c.widget.image: added translations for es
+ - z3c.widgetnojsdeps.image: added translations for es
 
  - update to newest bootstrap.py version

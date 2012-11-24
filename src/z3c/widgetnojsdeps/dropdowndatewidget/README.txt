@@ -1,7 +1,7 @@
 DropDownDateWidget
 ==================
 
-  >>> from z3c.widget.dropdowndatewidget.widget import DropDownDateWidget
+  >>> from z3c.widgetnojsdeps.dropdowndatewidget.widget import DropDownDateWidget
 
   >>> from zope.publisher.browser import TestRequest
   >>> request = TestRequest()

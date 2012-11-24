@@ -10,7 +10,7 @@ year range in this widget:
 
   >>> import datetime
   >>> from z3c.schema.dateselect import DateSelect
-  >>> from z3c.widget.dateselect.browser import DateSelectWidget
+  >>> from z3c.widgetnojsdeps.dateselect.browser import DateSelectWidget
 
   >>> field = DateSelect(
   ...     title=u'Birthday',
@@ -46,11 +46,11 @@ Let's make sure that all fields have the correct value:
 The constructor should have also created 3 widgets:
 
   >>> widget.widgets['year']
-  <z3c.widget.dateselect.browser.DropdownWidget object at ...>
+  <z3c.widgetnojsdeps.dateselect.browser.DropdownWidget object at ...>
   >>> widget.widgets['month']
-  <z3c.widget.dateselect.browser.DropdownWidget object at ...>
+  <z3c.widgetnojsdeps.dateselect.browser.DropdownWidget object at ...>
   >>> widget.widgets['day']
-  <z3c.widget.dateselect.browser.DropdownWidget object at ...>
+  <z3c.widgetnojsdeps.dateselect.browser.DropdownWidget object at ...>
 
 let's also test the year range:
 

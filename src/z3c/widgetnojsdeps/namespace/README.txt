@@ -5,7 +5,7 @@ The Widget Namespace
 The widget namespace provides a way to traverse to the widgets of a
 formlib form.
 
-  >>> from z3c.widget.namespace.namespace import WidgetHandler
+  >>> from z3c.widgetnojsdeps.namespace.namespace import WidgetHandler
 
 Let us define a form to test this behaviour.
 
